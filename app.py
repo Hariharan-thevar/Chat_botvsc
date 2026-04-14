@@ -25,7 +25,7 @@ except ImportError:
 app = Flask(__name__)
 CORS(app)
 
-GEMINI_MODEL = "gemini-1.5-flash-8b"
+GEMINI_MODEL = "gemini-2.0-flash"
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
 USE_POSTGRES  = bool(psycopg2 and DATABASE_URL)
 SQLITE_PATH   = "chat_history.db"
